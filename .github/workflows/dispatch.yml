@@ -1,0 +1,21 @@
+name: Dispatch Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  trigger_tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Trigger tests
+        uses: peter-evans/repository-dispatch@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          repository: nefotatari/CypressMiniProject
+          event-type: start-example-workflow
