@@ -19,3 +19,4 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           repository: nefotatari/CypressMiniProject
           event-type: start-example-workflow
+          client-payload: '{"service": "${{ inputs.repo }}"}'
