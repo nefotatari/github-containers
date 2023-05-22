@@ -16,7 +16,6 @@ jobs:
       - name: Trigger tests
         uses: peter-evans/repository-dispatch@v1
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.MY_PAT }}
           repository: nefotatari/CypressMiniProject
           event-type: start-example-workflow
-          client-payload: '{"service": "${{ inputs.repo }}"}'
