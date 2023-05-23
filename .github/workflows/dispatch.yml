@@ -8,5 +8,5 @@ jobs:
   e2e_dispatch:
     uses: nefotatari/github-workflows/.github/workflows/dispatch-e2e.yml@main
     with:
-      repo: github-containers
+      service_name: github-containers
     secrets: inherit
