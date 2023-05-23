@@ -6,7 +6,7 @@ on:
 
 jobs:
   e2e_dispatch:
-    uses: ./github-containers/.github/workflows/dispatch-e2e.yml
+    uses: ./github-workflows/.github/workflows/dispatch-e2e.yml
     with:
       repo: github-containers
     secrets: inherit
