@@ -19,3 +19,4 @@ jobs:
           token: ${{ secrets.MY_PAT }}
           repository: nefotatari/CypressMiniProject
           event-type: start-example-workflow
+          client-payload: '{"repositoryName": "${{ github.repository }}"}'
